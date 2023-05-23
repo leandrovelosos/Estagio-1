@@ -7,26 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-
+    <h3>exibindo dois numeros em ordem crescente atraves de condicional composta</h3>
     <h3>exibindo numeros em ordem crescente</h3>
     <script>
 
         //definindo as variaveis e recebendo pelo prompt
         var n1 = prompt('digite o primeiro numero: ');
         var n2 = prompt('digite o segundo numero: ');
-        var n3 = null;
+       
         n1 = parseInt(n1)
         n2 = parseInt(n2)
         
         //se n1 for maior que n2 os valores seram trocados e exibidos
         if(n1 > n2){
-            //trocando os valores das variaveis n1 e n2 atraves da variavel auxiliar n3
-            n3 = n2;
-            n2 = n1;
-            n1 = n3;
-            n3 = null;
+          document.write(n2 +', ' + n1);
+        //caso n2 seja maior que o n1 os valores são exibidos nessa ordem 
+        }else{
+            document.write(n1 +', ' + n2);
         }
-        document.write(n1+', '+ n2)
-    </script>
+        </script>
 </body>
 </html>
