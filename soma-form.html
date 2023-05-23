@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>soma</title>
+</head>
+
+<body>
+    <h3>Somatório de dois números</h3>
+
+    <form name="formulario" action="" method="post">
+        Digite o primeiro numero: <input type="text" name="n1"> <br><br>
+        Digite o segundo numero: <input type="text" name="n2"> <br><br>
+
+        <input type="button" name="btn-soma" value="Somar" onclick="soma()">
+        <input type="reset" name="btn-apagar" value="Apagar">
+
+    </form>
+
+    <script>
+
+        var n1;
+        var n2;
+        var soma;
+
+        //funcao para somar n1 e n2
+        function soma(){
+            //os dados do formulario soo trazidos para a funcao e convertidos para numeros inteiros
+            n1 = parseInt(document.formulario.n1.value);
+            n2 = parseInt(document.formulario.n2.value);
+
+            //variavel que recebe o valor da soma entre n1 e n2
+            soma = n1 + n2;
+
+            //saida dos dados atraves de um alerta no navegador
+            alert('O resultado da soma é: '+ soma.toString());
+
+        }
+    </script>
+</body>
+
+</html>
